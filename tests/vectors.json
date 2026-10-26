@@ -1,0 +1,138 @@
+{
+ "note": "See docs/FORMAT.md. Binary values are base64url without padding, as in the payload.",
+ "v2": [
+  {
+   "name": "secret link",
+   "linkKey": "OzVcdzN8eZO7q76NFhg4vwLxpwNDwr_LjKKFcsauh7c",
+   "payload": "{\"v\":2,\"m\":\"k\",\"n\":\"UbAijCwfc65f_vJe\",\"c\":\"EVlm8gQwcVucu-7JXtSu30541hYTdgjGFvlKYBs-yD5SSMWuE26v8hgGIVwEuGj8WoLNHcyopDZiGQ_blA1_UNY4lOnNNlxii6h31h915_cXijNZFUOkYNqwlVQIDWO05ZM2TR1Yfbt6773Xpo3cTCCdMwH6zg\"}",
+   "plaintext": {
+    "html": "<p>Meet at the <b>north</b> gate at 7.</p>",
+    "t": 1761264000,
+    "d": "Zm9yLXRoZS12ZWN0b3JzLW9ubHk"
+   }
+  },
+  {
+   "name": "passphrase",
+   "passphrase": "correct horse battery staple",
+   "payload": "{\"v\":2,\"m\":\"p\",\"it\":600000,\"s\":\"z40MZ4RsVtNDAIOJW6x0OQ\",\"n\":\"q_muCVUK2HW4cahQ\",\"c\":\"aPSlNVZFDU_HHgwPQ5SKj63zGZTxC7Zd-rzs-_iWEnzCSjJiljPz5hN87SvLeA6oc3Ie3-9_U56Mk9-b8ZXIPcMhwkDW8dXqAXeIgJzcJkac6-wJrzcrm-f30Zb20fF3hJJgruNCbUuvJ5xO-eSZZ-4Gk-dxpA\"}",
+   "plaintext": {
+    "html": "<p>Meet at the <b>north</b> gate at 7.</p>",
+    "t": 1761264000,
+    "d": "Zm9yLXRoZS12ZWN0b3JzLW9ubHk"
+   }
+  },
+  {
+   "name": "passphrase, NFC",
+   "passphrase": "café au lait",
+   "payload": "{\"v\":2,\"m\":\"p\",\"it\":600000,\"s\":\"7MUdvNzrj1vSC79A-M-HlQ\",\"n\":\"Faxk9fOZrhdrKHok\",\"c\":\"WawLS7czPt2tY-pEjGqYPgODGOr_lipPWH_e0j420HhJ2xedLW5X2yWyWKTB4yYT93dFWbjWWtAD-6IxUWumapc\"}",
+   "plaintext": {
+    "html": "<p>café</p>",
+    "t": 1761264000,
+    "d": "bmZj"
+   }
+  },
+  {
+   "name": "secret link with one attachment",
+   "linkKey": "tEuD5i-0JvXCgWNApbpq-Lfy2aOI1wt3xPX7epGV5S0",
+   "payload": "{\"v\":2,\"m\":\"k\",\"n\":\"Rp6JWn8UxI7rLp5E\",\"c\":\"zAHvvVVmrzuc45E7WqkAuG-84LZjQvoDzsY3SOn2wCla7DN974Gx40Dxlgwc8ZahkqagEod0543a3ja65JbyGBEegYqjcPs8KfIIV9Ndd9hFQG9GgPPbg67UlZaDseET_IzXDo_2FNs-34JIvBCNLJp5M5oW77TW5zKFqqh30gOb4mHzYhP3xxw36FDpRvydMQgMXz6M6JoPb_sGsE8\"}",
+   "plaintext": {
+    "html": "<p>See the file.</p>",
+    "t": 1761264000,
+    "d": "ZmlsZQ",
+    "att": [
+     {
+      "name": "notes.txt",
+      "type": "text/plain",
+      "size": 20,
+      "iv": "UDyZmJ0BlnewnNov"
+     }
+    ]
+   },
+   "files": [
+    {
+     "encrypted": "podQRxYopWetJnxknYNNCGg8UO3gqdFnmh40RiiOfC51DDp2",
+     "plaintext": "YXR0YWNobWVudCBib2R5OiA0Mgo"
+    }
+   ]
+  },
+  {
+   "name": "tampered ciphertext (must fail)",
+   "linkKey": "eAcTmN1eVRXDGRVfe7u2q_IyUYBQqFosdtEz6862Dt0",
+   "payload": "{\"v\":2,\"m\":\"k\",\"n\":\"pIMHWD3aVjH7D6HI\",\"c\":\"AZuOl1l5j8G8pqE4-DkvfT1TsDXquNZ87bgqiGX1NpEt9IPREgtrPx8Ryk05E2sDqLoBCvUWVzOoI3xLSHvLbUBKvbkFR6g73VcpAIlKYIc__i-OcEQKMJf9X6D3RPIeyTo3gXXJC12Q5-l04rWHrblZYdwkAg\"}",
+   "fails": true
+  }
+ ],
+ "legacy": [
+  {
+   "name": "2016 format",
+   "ivt": "Ab3dEf6hIj9lMn0p",
+   "passphrase": "Secret",
+   "enc": [
+    67,
+    245,
+    2,
+    204,
+    129,
+    227,
+    75,
+    207,
+    70,
+    54,
+    86,
+    145,
+    242,
+    41,
+    171,
+    88,
+    170,
+    142,
+    217,
+    171,
+    87,
+    165,
+    55,
+    163,
+    111,
+    67,
+    206,
+    228,
+    244,
+    168,
+    247,
+    86,
+    56,
+    47,
+    172,
+    19,
+    244,
+    189,
+    234,
+    103,
+    127,
+    79,
+    208,
+    143,
+    75,
+    15,
+    50,
+    251,
+    83,
+    245,
+    7,
+    92,
+    242,
+    207,
+    156,
+    246,
+    231,
+    113,
+    230,
+    98,
+    141,
+    6,
+    63
+   ],
+   "html": "<p>sealed in 2016</p>"
+  }
+ ]
+}
