@@ -24,7 +24,7 @@
     source: function () { return 'widget'; }
   };
 
-  /* Any button marked data-fb-open (the footer link, the About box) opens the widget's panel. It stays hidden until the widget has
+  /* Any button marked data-fb-open (the About box) opens the widget's panel. It stays hidden until the widget has
    * drawn its tab (the <fb-widget> element), so a page where the widget failed to load shows no dead link. An open About box is
    * closed first: it sits above everything, so the panel would be hidden behind it. */
   var links = Array.prototype.slice.call(document.querySelectorAll('[data-fb-open]'));

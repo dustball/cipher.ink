@@ -132,7 +132,7 @@ kbd { font: 11px 'JetBrains Mono', monospace; opacity: .7; border: 1px solid cur
 .tool { min-width: 32px; height: 30px; border: 0; border-radius: 6px; background: transparent; color: var(--fg2);
   display: inline-flex; align-items: center; justify-content: center; font: 600 12.5px 'JetBrains Mono', monospace; padding: 0 6px; }
 .tool b, .tool i, .tool s { font: 700 16px 'Newsreader', serif; }
-.tool i { font-weight: 500; font-style: italic; }
+.tool i { font-weight: 500; font-style: italic; font-family: Georgia, 'Times New Roman', serif; }   /* a system italic, so the page needs no italic font file until a message uses italics */
 .tool:hover { background: var(--line2); color: var(--fg); }
 .tool.on { color: var(--acc); background: var(--sel); }
 .sep { width: 1px; height: 18px; background: var(--line2); margin: 0 5px; flex: none; }
@@ -172,7 +172,7 @@ kbd { font: 11px 'JetBrains Mono', monospace; opacity: .7; border: 1px solid cur
 .prose pre code { background: none; border: 0; padding: 0; font-size: inherit; }
 .prose hr { border: 0; border-top: 1px solid var(--line2); margin: 2em 0; }
 .editor { outline: none; min-height: 700px; caret-color: var(--acc); }
-.editor.empty::before { content: attr(data-placeholder); position: absolute; pointer-events: none; color: var(--faint); font-style: italic; }
+.editor.empty::before { content: attr(data-placeholder); position: absolute; pointer-events: none; color: var(--faint); }
 
 /* --- sealing sequence --- */
 body.sealing .editor { color: var(--acc); }

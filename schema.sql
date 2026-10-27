@@ -1,4 +1,4 @@
--- cipher.ink tables (MySQL 8). Structure only, from release 20261026b.
+-- cipher.ink tables (MySQL 8). Structure only, from release 20261026c.
 CREATE TABLE `cipher_enc` (
   `iv` char(16) NOT NULL,
   `enc` blob,

@@ -9,7 +9,7 @@ include dirname(__FILE__) . '/local.php';
 // Behind Cloudflare's proxy: restore the visitor's address into REMOTE_ADDR (only when the peer is a Cloudflare edge). See cfip.php.
 include_once dirname(__FILE__) . '/cfip.php';
 
-define('CI_VERSION', '20261026b');          // bump when assets change, so browsers refetch them
+define('CI_VERSION', '20261026c');          // bump when assets change, so browsers refetch them
 define('CI_MAX_PAYLOAD', 700000);           // bytes of ciphertext JSON (~500k of message HTML)
 define('CI_MAX_FILES', 10);
 define('CI_MAX_FILE_BYTES', 5 * 1048576 + 65536);   // all attachments together, encrypted (5 MB + GCM tags)
@@ -334,8 +334,8 @@ function ci_scripts($names) {
  * it draws its own tab in a Shadow DOM. This prints the two script tags it needs, at the end of the page's <body>: assets/feedback-hooks.js
  * (sync, same origin; defines fbw.context() from the data-* attributes here, since the CSP forbids inline script) and then the async
  * embed. $kind is a coarse page kind chosen HERE, on the server, never read from the address: compose, view, receipt, contact,
- * santa-card, santa-group, santa, notfound, or a public content key such as learn/aes-gcm. The footer and About "Send feedback" links
- * ([data-fb-open]) are wired by the hooks file. CSP: CI_FB_HOST is in script-src and connect-src, and nowhere else. */
+ * santa-card, santa-group, santa, notfound, or a public content key such as learn/aes-gcm. The About box's "Send feedback" link
+ * ([data-fb-open]) is wired by the hooks file. CSP: CI_FB_HOST is in script-src and connect-src, and nowhere else. */
 function ci_feedback($kind) {
   global $CI_BASE;
   if (CI_FB_HOST === '') return;
